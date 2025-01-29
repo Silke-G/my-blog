@@ -31,6 +31,7 @@ header {
   margin-left: 10px;
 }
 
+
 .nav-link.custom-link {
   background-color: grey;
   color: white;
@@ -46,6 +47,26 @@ header {
 .nav-link.custom-link:hover {
   background-color: #007bff;
   color: white;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .nav-pills { /* Target the <ul> element */
+      flex-direction: column; /* Stack list items vertically */
+      width: 100%; /* Make the list full width */
+  }
+
+  .nav-item { /* Target the <li> elements */
+      width: 100%; /* Make list items full width */
+      margin: 0.5rem 0; /* Add vertical margin */
+  }
+
+  .nav-link { /* Target the <a> elements */
+      text-align: center; /* Center text within links */
+  }
+
+  .custom-link { 
+      width: 100%; 
+  }
 }
 
 footer {
@@ -108,34 +129,19 @@ main {
 }
 
 .content-container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 5vw; /* 5% of the viewport width */
+}
+
+@media (min-width: 769px) { /* Styles for larger screens */
+    .content-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 
 .bold-text {
   font-weight: bold;
-}
-
-@media (max-width: 768px) { 
-  #About {
-    font-size: 2.5rem;
-  }
-
-  #blog {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) { 
-  #About {
-    font-size: 2rem;
-  }
-
-  #blog {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
 }
 
 .btn.edit-post-link {
@@ -177,6 +183,8 @@ main {
 }
 
 .blog-post-cards .card-header {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
   min-height: 60px;
   height: auto;
   background-color: #bdbbb4;
