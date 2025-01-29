@@ -22,13 +22,18 @@ header {
   opacity: 1;
 }
 
+.header a.d-flex span { /* Or just .header a span if there's only one span in the <a> */
+  font-family: 'Open Sans', sans-serif;
+  color: white; /* Set the color in CSS */
+}
 
 
-.fs-4 {
+#innerpeace {
   font-family: "Open Sans", serif;
   font-weight: 700;
   font-style: normal;
   margin-left: 10px;
+  color: white;
 }
 
 
@@ -78,6 +83,7 @@ footer {
   bottom: 0;
   margin-top: 40px;
   opacity: 1;
+  text-align: center;
 }
 
 .back-to-top-btn {
@@ -184,7 +190,6 @@ main {
 
 .blog-post-cards .card-header {
   font-family: "Open Sans", serif;
-  font-weight: 300;
   min-height: 60px;
   height: auto;
   background-color: #bdbbb4;
@@ -194,7 +199,8 @@ main {
 }
 
 .card-header h5 {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 @media (min-width: 576px) {
