@@ -1,0 +1,48 @@
+
+<footer class="py-3">
+  <p>Copyright © <%= new Date().getFullYear() %></p>
+</footer>
+
+<button id="backToTopBtn" class="back-to-top-btn" style="display: none;">
+  ↑
+</button>
+
+
+<script>
+  window.onload = function() {
+      const backToTopBtn = document.getElementById('backToTopBtn');
+
+      window.onscroll = function() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              backToTopBtn.style.display = "block";
+          } else {
+              backToTopBtn.style.display = "none";
+          }
+      };
+
+      backToTopBtn.onclick = function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'  
+          });
+      };
+  };
+</script>
+
+<style>
+  .back-to-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #9fa2a4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  .back-to-top-btn:hover {
+      background-color: #0056b3;
+  }
+</style>
