@@ -22,9 +22,9 @@ header {
   opacity: 1;
 }
 
-.header a.d-flex span { /* Or just .header a span if there's only one span in the <a> */
-  font-family: 'Open Sans', sans-serif;
-  color: white; /* Set the color in CSS */
+.header a.d-flex span { 
+  font-family: 'Open Sans', sans-serif !important;
+  color: white; 
 }
 
 
@@ -189,7 +189,7 @@ main {
 }
 
 .blog-post-cards .card-header {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   min-height: 60px;
   height: auto;
   background-color: #bdbbb4;
