@@ -22,14 +22,9 @@ header {
   opacity: 1;
 }
 
-.header a.d-flex span { 
-  font-family: 'Open Sans', sans-serif !important;
-  color: white; 
-}
-
 
 #innerpeace {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   margin-left: 10px;
