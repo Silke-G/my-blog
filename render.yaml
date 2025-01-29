@@ -1,0 +1,7 @@
+services:
+  - name: my-blog
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    forward: 80
+    staticPublishPath: /public
